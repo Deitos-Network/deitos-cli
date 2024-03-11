@@ -1,1 +1,1 @@
-# deitos-uploader
+# deitos-cli
