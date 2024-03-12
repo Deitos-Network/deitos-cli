@@ -36,6 +36,7 @@ impl Client {
         self.fetch_or_die(query).await
     }
 
+    /// Register a file on the chain.
     pub async fn register_file(
         &self,
         signer: Pair,

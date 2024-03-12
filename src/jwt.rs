@@ -52,6 +52,7 @@ pub struct Claims {
     iat: u64,
 }
 
+/// Token signer. This is a custom signer that uses the sr25519 signature algorithm.
 pub struct TokenSigner {
     pub keypair: Pair,
 }
@@ -74,6 +75,7 @@ impl SigningAlgorithm for TokenSigner {
     }
 }
 
+/// Generate a JWT token for a given agreement
 pub fn generate_token(
     keypair: Pair,
     agreement: AgreementId,

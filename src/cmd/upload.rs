@@ -65,6 +65,7 @@ impl UploadCmd {
         file_hash
     }
 
+    /// Run the upload command
     pub async fn run(&self) {
         let pair = self.get_keypair();
         let file_hash = self.get_file_hash().await;
